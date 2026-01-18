@@ -14,6 +14,18 @@ algorithmic problem solving in C.
 - Calculates and reports compression percentage
 - Graceful handling of file I/O errors
 
-## How It Works
-The program reads the input file byte-by-byte and replaces consecutive
-repeating characters with a single character followed by its count.
+## Example
+AAAAABB → A5B2
+
+## Usage
+
+### Compile the program
+gcc rle_compress.c -o rle_compress
+
+Run the compressor
+./rle_compress input.txt output.rle
+
+Sample Output
+Compression completed: input.txt -> output.rle
+The input file size is: 1200 bytes, and the output file size is: 620 bytes
+File size reduction is: 48.33% - Above average
